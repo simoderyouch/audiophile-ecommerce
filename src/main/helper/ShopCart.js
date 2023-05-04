@@ -45,6 +45,9 @@ function ShopCart() {
           setOpen(false)
 
         }
+        if (check && location.pathname === "/checkout") {
+          navigate(-1)
+        }
         delete updatedCart[id];
         setCart(updatedCart);
       }
