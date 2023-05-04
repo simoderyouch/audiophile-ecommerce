@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap');
+
+*:focus {
+  outline: none;
+}
+body {
+  margin: 0;
+  font-family: Manrope,sans-serif;
+  scroll-behavior: smooth;
+ 
+  
+}
+.placeholder::placeholder {
+   font-weight: bold;
+   font-size: 14px;
+   outline: none;
+}
+.area {
+  grid-area: 1 / 2 / 3;
+}
+@media (max-width:600px) {
+  .area {
+    grid-area: auto !important;
+  }
+}
+.hero {    
+  background-image: url('./assets/home/desktop/image-hero.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 900px) {
+  .hero {    
+    background-image: url('./assets/home/tablet/image-header.jpg');
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .hero {    
+    background-image: url('./assets/home/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+.product {
+  background-image: url('./assets/home/desktop//pattern-circles.svg');
+  background-position: -8rem -1.125rem;
+  background-repeat: no-repeat;
+  background-size: 79%;
+}
+
+
+
+
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type="radio"] + .radio-label:before {
+  content: '';
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  position: relative;
+  
+  
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio input[type="radio"]:checked + .radio-label:before {
+  background-color: hsl(22, 65%, 57%);
+  box-shadow: inset 0 0 0 4px #ffffff;
+  border: 1px solid hsl(22, 65%, 57%);
+}
+
+.radio input[type="radio"]:checked + .radio-label {
+
+  border: 1.8px solid hsl(22, 65%, 57%);
+}
+
+.toast {
+  font-weight: bold; 
+  font-size: 14px;
+  color:  rgba(255,255,255,0.5);
+  padding-left: 2rem;
+ 
+}
