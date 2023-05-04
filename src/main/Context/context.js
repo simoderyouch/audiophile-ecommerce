@@ -169,13 +169,7 @@ function Context(props) {
 
   }
 
-  const onSubmit = () => {
-    validateForm()
-    if (validateForm()) {
-      setDone(true);
 
-    }
-  };
   return (
 
     <div>
