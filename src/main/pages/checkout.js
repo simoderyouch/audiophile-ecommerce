@@ -7,19 +7,15 @@ import { CheckoutDetails } from "../helper/checkoutDetail";
 import { Summary } from "../helper/summary";
 import Confirmation from "../helper/confirm";
 function Checkout() {
-  const { cart, check, validateForm } = useContext(MyContext);
+  const { validateForm } = useContext(MyContext);
 
   const [Done, setDone] = useState(false);
   const navigate = useNavigate();
 
   const goToPreviousPath = () => {
-    /*  navigate(-1); */
+    navigate(-1);
   };
 
-  /* if (check && Object.keys(cart).length === 0) {
-    navigate(-1);
-  }
- */
   const handleSubmit = (event) => {
     event.preventDefault();
 

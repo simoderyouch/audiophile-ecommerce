@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
-import { useLocation } from "react-router-dom"
+
 import { React } from "react";
 import dataJson from './data.json';
 
@@ -20,7 +20,7 @@ function Context(props) {
   const [headphonesProduct, setHeadphonesProduct] = useState([]);
   const [speakersProduct, setSpeakersProduct] = useState([]);
   const [earphonesProduct, setEarphonesProduct] = useState([]);
-  const location = useLocation();
+
 
   useEffect(() => {
     setHeadphonesProduct(dataJson.filter((pr) => pr.category === "headphones").sort((a, b) => Number(b.new) - Number(a.new)));

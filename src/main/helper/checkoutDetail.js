@@ -4,7 +4,7 @@ import { MyContext } from "../Context/context";
 import { Input } from "./input";
 
 export function CheckoutDetails() {
-  const { formData, onChange, errors, onSubmit } = useContext(MyContext);
+  const { formData, onChange, errors } = useContext(MyContext);
 
   let invalid = "name";
 

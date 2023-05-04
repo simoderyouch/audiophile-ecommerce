@@ -14,7 +14,7 @@ export function Input(props) {
             inputReference.current.focus()
         }
 
-    }, [props.invalid])
+    }, [props.invalid, props.name])
 
 
     return (
