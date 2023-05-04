@@ -173,7 +173,7 @@ function Context(props) {
   return (
 
     <div>
-      <MyContext.Provider value={{ addToCart, onSubmit, onChange, errors, validateForm, initialState, formData, setFormData, check, setCheck, amout, cart, setCart, isOpen, setOpen, headphonesProduct, speakersProduct, handleAdd, handleMinus, earphonesProduct, dataJson, quantity, setQuantity }}>
+      <MyContext.Provider value={{ addToCart, onChange, errors, validateForm, initialState, formData, setFormData, check, setCheck, amout, cart, setCart, isOpen, setOpen, headphonesProduct, speakersProduct, handleAdd, handleMinus, earphonesProduct, dataJson, quantity, setQuantity }}>
         {props.children}
       </MyContext.Provider>
     </div>
